@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:fb="http://football.org#"
+   xmlns:ns1="http://www.semanticweb.org/ontologies/football#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://football.org#Card">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#broadcastedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Player">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Manager">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#age">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Physio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#positionName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Lionel_Messi">
+    <rdf:type rdf:resource="http://football.org#Player"/>
+    <fb:name>Lionel Messi</fb:name>
+    <fb:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</fb:age>
+    <fb:nationality>Argentina</fb:nationality>
+    <fb:playsFor rdf:resource="http://football.org#Barcelona"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/football#France">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/football#Team"/>
+    <rdfs:label>France</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/football#LionelScaloni">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/football#Coach"/>
+    <rdfs:label>Lionel Scaloni</rdfs:label>
+    <ns1:coaches rdf:resource="http://www.semanticweb.org/ontologies/football#Argentina"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#manages">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/football#FIFAWorldCup2022Final">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/football#FootballMatch"/>
+    <rdfs:label>FIFA World Cup 2022 Final</rdfs:label>
+    <ns1:team1 rdf:resource="http://www.semanticweb.org/ontologies/football#Argentina"/>
+    <ns1:team2 rdf:resource="http://www.semanticweb.org/ontologies/football#France"/>
+    <ns1:playedAt rdf:resource="http://www.semanticweb.org/ontologies/football#LusailStadium"/>
+    <ns1:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-18</ns1:date>
+    <ns1:winner rdf:resource="http://www.semanticweb.org/ontologies/football#Argentina"/>
+    <ns1:score>3-3 (Argentina won 4-2 on penalties)</ns1:score>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Fan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/football#Argentina">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/football#Team"/>
+    <rdfs:label>Argentina</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#awardedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#hasCoach">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#clubName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Barcelona">
+    <rdf:type rdf:resource="http://football.org#Club"/>
+    <fb:clubName>FC Barcelona</fb:clubName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#score">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Tournament">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Coach">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Team">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/football#DidierDeschamps">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/football#Coach"/>
+    <rdfs:label>Didier Deschamps</rdfs:label>
+    <ns1:coaches rdf:resource="http://www.semanticweb.org/ontologies/football#France"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#occurredInMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/football#KylianMbappe">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/football#Player"/>
+    <rdfs:label>Kylian Mbappe</rdfs:label>
+    <ns1:playsFor rdf:resource="http://www.semanticweb.org/ontologies/football#France"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#coaches">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Goal1">
+    <rdf:type rdf:resource="http://football.org#Goal"/>
+    <fb:eventTime>45</fb:eventTime>
+    <fb:occurredInMatch rdf:resource="http://football.org#Match1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Commentator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/football#LionelMessi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/football#Player"/>
+    <rdfs:label>Lionel Messi</rdfs:label>
+    <ns1:playsFor rdf:resource="http://www.semanticweb.org/ontologies/football#Argentina"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Goal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#happenedAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#supports">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Award">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#League">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#playsFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Stadium">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Position">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Foul">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#comment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Sponsorship">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#hasPlayer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Referee">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Match">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#UCL_2025">
+    <rdf:type rdf:resource="http://football.org#Tournament"/>
+    <fb:tournamentName>UEFA Champions League 2025</fb:tournamentName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#participatedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#eventTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#sponsoredBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Club">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#seasonYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#tournamentName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Injury">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://football.org#Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/football#LusailStadium">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/football#Stadium"/>
+    <rdfs:label>Lusail Stadium</rdfs:label>
+    <ns1:location>Lusail, Qatar</ns1:location>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#playedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#countryName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Season">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Broadcast">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#nationality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#belongsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#cardType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

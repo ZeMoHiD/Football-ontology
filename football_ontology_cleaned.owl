@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://purl.org/dc/elements/1.1/"
+   xmlns:ns2="http://football.org#"
+   xmlns:ns3="http://purl.org/dc/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Angel_Di_Maria">
+    <rdf:type rdf:resource="http://football.org#Player"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns2:clubName>Benfica</ns2:clubName>
+    <ns2:nationality>Argentina</ns2:nationality>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</ns2:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#happenedAt">
+    <rdfs:comment>This is the entity: happenedAt.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>happenedAt</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Match1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment>This is the entity: Match1.</rdfs:comment>
+    <rdfs:label>Match1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Julian_Alvarez">
+    <ns2:playsFor rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Atletico_Madrid"/>
+    <rdfs:comment>Plays for Atletico Madrid</rdfs:comment>
+    <ns2:nationality>Argentina</ns2:nationality>
+    <rdf:type rdf:resource="http://football.org#Player"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</ns2:age>
+    <ns2:clubName>Atletico Madrid</ns2:clubName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Diego_Simeone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Manager"/>
+    <ns2:coaches rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Atletico_Madrid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#age">
+    <rdfs:comment>This is the entity: age.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>age</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Atletico_Madrid">
+    <rdf:type rdf:resource="http://football.org#Club"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Santiago_Bernabeu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Stadium"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#tournamentName">
+    <rdfs:label>tournamentName</rdfs:label>
+    <rdfs:comment>This is the entity: tournamentName.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#hasPlayer">
+    <rdfs:comment>This is the entity: hasPlayer.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasPlayer</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Match">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Match</rdfs:label>
+    <rdfs:comment>This is the entity: Match.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#UCL_2025">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Tournament"/>
+    <rdfs:comment>This is the entity: UCL 2025.</rdfs:comment>
+    <ns2:tournamentName>UEFA Champions League 2025</ns2:tournamentName>
+    <rdfs:label>UCL 2025</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#seasonYear">
+    <rdfs:comment>This is the entity: seasonYear.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>seasonYear</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#countryName">
+    <rdfs:comment>This is the entity: countryName.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>countryName</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Lautaro_Martinez">
+    <ns2:nationality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</ns2:nationality>
+    <ns2:nationality>Argentina</ns2:nationality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Player"/>
+    <ns2:clubName>Inter Milan</ns2:clubName>
+    <ns2:playsFor rdf:resource="http://football.org#Lautaro_Martinez"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#playsFor">
+    <rdfs:label>playsFor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>This is the entity: playsFor.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#supports">
+    <rdfs:comment>This is the entity: supports.</rdfs:comment>
+    <rdfs:label>supports</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#awardedTo">
+    <rdfs:comment>This is the entity: awardedTo.</rdfs:comment>
+    <rdfs:label>awardedTo</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#matheu_lopez">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Referee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Manager">
+    <rdfs:comment>This is the entity: Manager.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Manager</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#comment">
+    <rdfs:comment>This is the entity: comment.</rdfs:comment>
+    <rdfs:label>comment</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Hansi_Flick">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Manager"/>
+    <ns2:coaches rdf:resource="http://football.org#Barcelona"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70460e28345e407b8bfd1c81d6803aeb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Barca_vs_Madrid">
+    <rdf:type rdf:resource="http://football.org#Match"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Player">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Player</rdfs:label>
+    <rdfs:comment>plays for barcelona as RW</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#coaches">
+    <rdfs:label>coaches</rdfs:label>
+    <rdfs:comment>This is the entity: coaches.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Stadium">
+    <rdfs:comment>This is the entity: Stadium.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Stadium</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#clubName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment>This is the entity: clubName.</rdfs:comment>
+    <rdfs:label>clubName</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Tournament">
+    <rdfs:comment>This is the entity: Tournament.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Tournament</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#hasCoach">
+    <rdfs:label>hasCoach</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>This is the entity: hasCoach.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Aurelien_Tchouameni">
+    <rdfs:label>Aurelien Tchouameni</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment>This is the entity: Aurelien Tchouameni.</rdfs:comment>
+    <ns2:playsFor rdf:resource="http://football.org#France_National_Team"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Goal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Goal</rdfs:label>
+    <rdfs:comment>This is the entity: Goal.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#eventTime">
+    <rdfs:comment>This is the entity: eventTime.</rdfs:comment>
+    <rdfs:label>eventTime</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Eduardo_Camavinga">
+    <ns2:playsFor rdf:resource="http://football.org#Real_Madrid"/>
+    <rdfs:label>Eduardo Camavinga</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment>This is the entity: Eduardo Camavinga.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#occurredInMatch">
+    <rdfs:label>occurredInMatch</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>This is the entity: occurredInMatch.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Joao_Felix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment>This is the entity: Joao Felix.</rdfs:comment>
+    <ns2:playsFor rdf:resource="http://football.org#FC_Barcelona"/>
+    <rdfs:label>Joao Felix</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Barcelona">
+    <rdfs:comment>This is the entity: Barcelona.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Club"/>
+    <ns2:clubName>FC Barcelona</ns2:clubName>
+    <rdfs:label>Barcelona</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Lionel_Messi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Player"/>
+    <rdfs:comment>This is the entity: Lionel Messi.</rdfs:comment>
+    <rdfs:label>Lionel Messi</rdfs:label>
+    <ns2:name>Lionel Messi</ns2:name>
+    <ns2:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</ns2:age>
+    <ns2:playsFor rdf:resource="http://football.org#Barcelona"/>
+    <ns2:nationality>Argentina</ns2:nationality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#positionName">
+    <rdfs:label>positionName</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment>This is the entity: positionName.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Goal1">
+    <ns2:eventTime>45</ns2:eventTime>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Goal"/>
+    <rdfs:comment>This is the entity: Goal1.</rdfs:comment>
+    <rdfs:label>Goal1</rdfs:label>
+    <ns2:occurredInMatch rdf:resource="http://football.org#Match1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#">
+    <ns1:title>Football Ontology</ns1:title>
+    <rdfs:label></rdfs:label>
+    <ns3:created>2025-05-19</ns3:created>
+    <rdfs:comment>This ontology represents football domain concepts such as players, clubs, fouls, and matches.</rdfs:comment>
+    <ns1:creator>Generated and Annotated by ChatGPT</ns1:creator>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#belongsTo">
+    <rdfs:label>belongsTo</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>This is the entity: belongsTo.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#cardType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>cardType</rdfs:label>
+    <rdfs:comment>This is the entity: cardType.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Club">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Club</rdfs:label>
+    <rdfs:comment>This is the entity: Club.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Benfica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Club"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#playedIn">
+    <rdfs:label>playedIn</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>This is the entity: playedIn.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Lautaro_Martinez">
+    <rdfs:comment>This is the entity: Lautaro Martinez.</rdfs:comment>
+    <rdfs:label>Lautaro Martinez</rdfs:label>
+    <ns2:playsFor rdf:resource="http://football.org#Argentina_National_Team"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Referee">
+    <rdfs:label>Referee</rdfs:label>
+    <rdfs:comment>This is the entity: Referee.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#nationality">
+    <rdfs:label>nationality</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment>This is the entity: nationality.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#date">
+    <rdfs:comment>This is the entity: date.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>date</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Rodrygo">
+    <rdfs:label>Rodrygo</rdfs:label>
+    <rdfs:comment>This is the entity: Rodrygo.</rdfs:comment>
+    <ns2:playsFor rdf:resource="http://football.org#Real_Madrid"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>name</rdfs:label>
+    <rdfs:comment>This is the entity: name.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#participatedIn">
+    <rdfs:comment>This is the entity: participatedIn.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>participatedIn</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Inter_Milan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://football.org#Club"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#manages">
+    <rdfs:comment>This is the entity: manages.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>manages</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#sponsoredBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>sponsoredBy</rdfs:label>
+    <rdfs:comment>This is the entity: sponsoredBy.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Camp_Nou">
+    <rdf:type rdf:resource="http://football.org#Stadium"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#broadcastedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>This is the entity: broadcastedBy.</rdfs:comment>
+    <rdfs:label>broadcastedBy</rdfs:label>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://football.org#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Ilkay_Gundogan">
+    <rdfs:comment>This is the entity: Ilkay Gundogan.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Ilkay Gundogan</rdfs:label>
+    <ns2:playsFor rdf:resource="http://football.org#FC_Barcelona"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#score">
+    <rdfs:label>score</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment>This is the entity: score.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://football.org#Entity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Olivier_Giroud">
+    <ns2:playsFor rdf:resource="http://football.org#France_National_Team"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Olivier Giroud</rdfs:label>
+    <rdfs:comment>This is the entity: Olivier Giroud.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Enzo_Fernandez">
+    <ns2:playsFor rdf:resource="http://football.org#Argentina_National_Team"/>
+    <rdfs:label>Enzo Fernandez</rdfs:label>
+    <rdfs:comment>This is the entity: Enzo Fernandez.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://football.org#Entity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
